@@ -1,0 +1,14 @@
+<div *ngIf="responseReceived" id="main" style="display: flex; flex-grow: grow;">
+
+  <app-column-sides style="display: flex;flex: 2;"></app-column-sides>
+  <app-column-main style="display: flex;flex: 0 1 auto;"></app-column-main>
+  <app-column-sides style="display: flex;flex: 2;"></app-column-sides>
+
+</div>
+
+<div *ngIf="responseReceived" id="footer" style="display: flex; margin-top: 2rem;">
+  <app-footer style="flex: 0 1 40px; margin: auto; text-align: center;"></app-footer>
+</div>
+
+
+<router-outlet></router-outlet>
